@@ -1,0 +1,29 @@
+
+<h1>Repaso de Java Script</h1>
+<h2>Evoluciones de ES5 a ES6</h2>
+
+<script>
+
+	let nombre = window.prompt("Como te llamas?");
+
+	const hoy = "2019-04-06";
+
+	/*
+	function saludar(){
+		window.alert("Hola " + nombre)
+	} //funciones nominadas
+	*/
+
+	const saludar = () => { //arrow function se coloca una flecha la diferencia con function es escribir menos cod. y this
+		window.alert(`Hola ${nombre}, que tengas un buen ${hoy}!!!`) //para usar template string
+	}
+
+	document.querySelector("h1").onclick = saludar;
+
+	document.querySelector("h2").onclick = function(){
+		this.style.color = "red" //this es autoreferencia del elemento que provoco la ejecucion de este elemento en este ejemplo, del h2
+		window.alert(`Hoy es ${hoy}`) //funciones anonimas
+
+	};
+
+</script>
