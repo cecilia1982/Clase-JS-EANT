@@ -25,20 +25,22 @@
 	     return elProducto
 	}
 
+	/*creamos esta funcion que crea objetos, pero debemos pasarles los datos sueltos con el orden correcto*/
+
 ////////////////////////////////////////////
 	let nombre = "Cafe";
 	let precio = 65.80;
 	let stock = 100;
-	let disponible = true; 
+	let disponible = true; /*variables sueltas*/
 
-	let unProducto = ["Jugo", 55.65, 400, false] 
+	let unProducto = ["Jugo", 55.65, 400, false] /*array*/
 
 	let otroProducto = {
 		nombre : "Agua", 
 		precio : 54.45,
 		stock : 150,
 		disponible : false
-	}
+	} /*Objeto*/
 
 	let superProducto = crearProducto("Pan", 85, 100, true)
 	let batiProducto  = crearProducto("Azucar", 65.25, 300, false)
